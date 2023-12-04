@@ -1,9 +1,12 @@
-x = int(input())
-d = int(input())
 n = int(input())
-
-res = [x]
-for i in range(1, n):
-    res.append(res[i - 1] + d)
-for i in res:
-    print(i, end=' ')
+d = '1'
+res = 'NO'
+for i in range(10**10):
+    if int(d) % n == 0:
+        res = d
+        break
+    d += '1'
+if res != 'NO':
+    print(int(res))
+else:
+    print(res)
