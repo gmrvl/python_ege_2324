@@ -9,4 +9,4 @@ for i in range(1, 100000):
     if R > 441:
         print(R)
         break
-
+# не сумма 1 , а просто число
