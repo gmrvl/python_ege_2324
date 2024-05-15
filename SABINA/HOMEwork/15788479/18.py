@@ -1,14 +1,17 @@
-for i in range(0,10000):
-    n = int(bin(i)[2:])
-
-    if i % 5 == 0:
-        r = int(str(n) + str(bin(5)[2:]))
-    elif i % 7 == 0:
-        r = int(str(n) + str(bin(7)[2:]))
+for n in range(0, 1000000):
+    r = bin(n)[2:]
+    if n % 5 == 0:
+        r += bin(5)[2:]
     else:
-        r = int(str(n) + '1')
+        r += '1'
+    if int(r, 2) % 7 == 0:
+        r += bin(7)[2:]
+    else:
+        r += '1'
+    r = int(r, 2)
     if r < 1728404:
         print(n)
+
 
 
 
