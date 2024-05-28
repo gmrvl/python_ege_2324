@@ -1,4 +1,4 @@
-for i in range(10000,100000):
+for i in range(10000, 100000):
     s = str(i)
     a1 = int(s[0])
     a2 = int(s[1])
@@ -13,3 +13,4 @@ for i in range(10000,100000):
         n = str(sum2) + str(sum1)
     if n == '621':
         print(i)
+        break
