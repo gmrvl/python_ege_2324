@@ -19,8 +19,8 @@ for i in range(2):
     forward(47*k)
     right(90)
 pu()
-for x in range(-10,100):
-    for y in range(-10,100):
+for x in range(-10,15):
+    for y in range(-10,15):
         goto(x*k, y*k)
         dot(5)
 done()
