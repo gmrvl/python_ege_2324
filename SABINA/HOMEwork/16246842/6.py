@@ -9,4 +9,3 @@ for i in range(1, 10000):
     if r > 396:
        print(r)
        break
-

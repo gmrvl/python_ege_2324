@@ -8,4 +8,4 @@ for i in range(1, 100000):
     r = int(n, 2)
     if r > 83:
         print(r)
-        break
+
