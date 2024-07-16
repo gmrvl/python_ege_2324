@@ -5,7 +5,7 @@ for i in range(1, 10000):
         n = n + str(summ % 2)
     else:
         n += str(summ % 2)
-    r = int(n,2)
+    r = int(n, 2)
     if r > 396:
-       print(r)
-       break
+        print(r)
+        break
