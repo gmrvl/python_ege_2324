@@ -3,12 +3,13 @@
 count = 0
 for i in range(1000, 10000):
     s = str(i)
-    s = set(s)
-    if int(s[0]) % 2 == 1 and int(s[1]) % 2 == 0 and int(s[2]) % 2 == 1 and int(s[3]) % 2 == 0 :
+    r = str(set(s))
+
+    if len(s) != len(r) and int(s[0]) % 2 == 1 and int(s[1]) % 2 == 0 and int(s[2]) % 2 == 1 and int(s[3]) % 2 == 0 :
         count += 1
     else:
         count += 0
-    if int(s[0]) % 2 == 0 and int(s[1]) % 2 == 1 and int(s[2]) % 2 == 0 and int(s[3]) % 2 == 1:
+    if len(s) != len(r) and int(s[0]) % 2 == 0 and int(s[1]) % 2 == 1 and int(s[2]) % 2 == 0 and int(s[3]) % 2 == 1:
         count += 1
     else:
         count += 0
