@@ -1,4 +1,4 @@
-for n in range(1, 10000):
+for n in range(0, 256):
     s = bin(n)[2:]
 #    print(s)
 #    print('stp')
@@ -6,9 +6,7 @@ for n in range(1, 10000):
     s = s.replace('1', '0')
     s = s.replace('*', '1')
 #    print(s)
-    while s[0] == '0' and len(s) > 1:
-        s = s[1:]
-    r = int(s, 2)
-    r = n - r
-    if r == 999:
+    s = int(s, 2)
+    r = n - s
+    if r == 133:
         print(n)
