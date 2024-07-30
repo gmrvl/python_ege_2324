@@ -1,6 +1,6 @@
 for n in range(0, 256):
     s = bin(n)[2:]
-#    print(s)
+    print(s)
 #    print('stp')
     s = s.replace('0', '*')
     s = s.replace('1', '0')
