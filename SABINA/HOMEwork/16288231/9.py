@@ -1,10 +1,7 @@
 count = 0
-for i in range(100000000, 1000000000):
-    i = str(i)
-    f = True
-    a = set(i)
-    if len(a) != len(i):
-        f = False
-    if f and (int(i) % 5 == 0):
+for i in range(1, 9876543211):
+    s = str(i)
+    a = set(s)
+    if (len(a) == len(s)) and (i % 5 == 0):
         count += 1
 print(count)
