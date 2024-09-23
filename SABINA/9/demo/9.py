@@ -1,7 +1,7 @@
 f = open('demo_2025_9.csv')
 count = 0
 for s in f:
-    a = sorted(list(map(int, s.split(';'))))
+    a = sorted(list(map(int, s.split(';')))) #sorted - сортировка по возрастанию; split разделение на ячейки по знаку ';'
     if a[0] == a[1] == a[2] and a[2] != a[3] and a[3] != a[4] and a[4] != a[5]:
         if (a[0]*3)**2 > (a[3] + a[4] + a[5])**2:
             count += 1
