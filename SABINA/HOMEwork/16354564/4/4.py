@@ -8,19 +8,15 @@
 
 
 f = open('09 (1)csv.csv')
-count = 0
-
+cunt = 0
 for i in f:
-    a = list(map(int,i.split(';')))
-    a = sorted(a)
-    s = set(a)
-    if len(a) != len(s):
-        if a[5] == 1:
-            sum = 0          # или if a.count(max(a)) == 1:
-            for k in range(0,len(a)):
+    a = list(map(int, i.split(';')))
+    if len(a) != len(set(a)):
+        if a.count(max(a)) == 1:
+            summ = 0          # или if a.count(max(a)) == 1:
+            for k in range(0, len(a)):
                 if a.count(a[k]) > 1:
-                    sum = sum + a[k]
-                    print(sum)
-                if sum < a[5]:
-                    count += 1
-print(count)
+                    summ += a[k]
+            if summ < max(a):
+                cunt += 1
+print(cunt)
