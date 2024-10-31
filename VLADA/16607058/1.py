@@ -12,7 +12,6 @@ for n in range(34722222, 45138888):
         bin_n += '0'
     bin_n += ost2
     r = int(bin_n, 2)
-    print(r)
     if 1111111110 <= r <= 1444444416:
         count += 1
 print(count)
