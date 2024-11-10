@@ -7,7 +7,7 @@ for i in range(0, len(f)-1):
         fst, sec = f[i], f[j]
         if (abs(fst - sec) % 60 == 0) and \
                 ((fst % 15 == 0) or (sec % 15 == 0)):
-            cnt += 0
+            cnt += 1
             if abs(fst - sec) > maxx:
                 maxx = abs(fst - sec)
 print(cnt, maxx)
