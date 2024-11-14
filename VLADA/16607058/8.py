@@ -7,5 +7,4 @@ for n in range(0, 10000):
         bin_n += '00'
     r = int(bin_n, 2)
     if r >= 114:
-        print(r)
-        break
+        print(r
