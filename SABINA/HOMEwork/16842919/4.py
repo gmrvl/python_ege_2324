@@ -1,23 +1,23 @@
-f = open('4.txt')
 cnt = 0
 minn = 100000
 maxx = -1
 r = [int(i) for i in open('4.txt')]
 for i in r:
-    if r[-1]=='4' and r[-2] == '2':
-        if r > maxx:
-            maxx = r
-
+    if i % 100 == 24:
+        if i > maxx:  # maxx = max(i, maxx)
+            maxx = i
+f = open('4.txt')
 fst = f.readline()
-k = list(f)[:2]
-for sec in f:
-    for thd in k:
-        fst, sec, thd  = int(fst), int(sec), int(thd)
-        if (len(fst) == 3) or len(sec) == 3 or len(thd) == 3:
-            if (fst + sec + thd) > maxx:
-                cnt += 1
-                if fst + sec + thd < minn:
-                    minn = fst + sec + thd
-        fst = sec
+sec = f.readline()
+for thd in f:
+    a = [len(fst) - 1, len(sec) - 1, len(thd) - 1]  # костыль
+    # fst, sec, thd = int(fst), int(sec), int(thd)
+    if (a.count(3) == 1) and ((int(fst) + int(sec) + int(thd)) > maxx):
+        cnt += 1
+        if int(fst) + int(sec) + int(thd) < minn:
+            print(minn)
+            minn = int(fst) + int(sec) + int(thd)
+    fst = sec
+    sec = thd
 print(cnt, minn)
 

@@ -1,4 +1,4 @@
-f  = [int(x) for x in open('3.txt')]
+f = [int(x) for x in open('2.txt')]
 cnt = 0
 maxx = -1
 
