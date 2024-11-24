@@ -7,7 +7,7 @@ def F(n):
         return 1 + F(n-1)
 
 cnt = 0
-for n in range(1, 1001):
+for n in range(1, 500):
     if F(n) == 3:
         cnt += 1
 print(cnt)
