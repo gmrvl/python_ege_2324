@@ -1,4 +1,4 @@
-file = open('10.txt')
+file = open('10.txt') # ПРОВЕРИЛИ, ПЕРЕДЕЛАТЬ
 cnt = 0
 maxx = -20000
 first = file.readline()
