@@ -8,5 +8,6 @@ for second in file:
         count += 1
         if first + second > maxx:
             maxx = first + second
+            # maxx = max(maxx, fst + sec)
     first = second
 print(count, maxx)
