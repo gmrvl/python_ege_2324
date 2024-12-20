@@ -1,17 +1,14 @@
-for i in range(1000, 100000):
+for i in range(1000, 10000):
     a = str(i)
-    n1 = int(a[1]) + int(a[2])
-    n2 = int(a[2]) + int(a[3])
-    n3 = int(a[3]) + int(a[4])
-    sum1 = a[1]
-    sum2 = a[2]
-    sum3 = a[3]
-    maxx = str (max(sum1, sum2, sum3))
-    aver = str ((sum1, sum2, sum3) - maxx - min(sum1, sum2, sum3))
+    sum1 = int(a[0]) + int(a[1])
+    sum2 = int(a[1]) + int(a[2])
+    sum3 = int(a[2]) + int(a[3])
+    maxx = str(max(sum1, sum2, sum3))
+    aver = str(sum([sum1, sum2, sum3]) - int(maxx) - min(sum1, sum2, sum3))
     res = aver + maxx
     if res == '613':
         print(i)
-        break
+
 
 #Автомат получает на вход четырёхзначное число (число не может начинаться с нуля). По этому числу строится новое число по следующим правилам.
 

@@ -1,14 +1,14 @@
-for i in range(100, 10000):
+for i in range(100, 1000):
     a = str(i)
-    n1 = int(a[1]) + int(a[2])
-    n2 = int(a[3]) + int(a[4])
+    n1 = int(a[0]) * int(a[1])
+    n2 = int(a[1]) * int(a[2])
     if n1 < n2:
         res = str(n1) + str(n2)
     else:
         res = str(n2) + str(n1)
     if res == '621':
         print(i)
-        break
+
 
 #Автомат получает на вход трёхзначное число. По этому числу строится новое число по следующим правилам.
 
