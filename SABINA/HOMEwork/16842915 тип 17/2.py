@@ -5,5 +5,5 @@ for i in range(0, len(M)-1):
         x, y = M[i], M[j]
         if (x - y) % 45 == 0:
             if x % 18 == 0 or y % 18 == 0:
-                R.append(x + y)
+                R.append(x - y)
 print(len(R), max(R))

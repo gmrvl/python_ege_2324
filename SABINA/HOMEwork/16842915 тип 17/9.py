@@ -12,8 +12,8 @@ fst = f.readline()
 for sec in f:
     fst, sec = int(fst), int(sec)
     if fst % min21 == 0 or sec % min21 == 0:
-        if (fst + sec) % 7 == 0:
-            cnt +=1
-            maxx = max(maxx, fst + sec)
+        # if (fst + sec) % 7 == 0:
+        cnt +=1
+        maxx = max(maxx, fst + sec)
     fst = sec
-print(cnt,maxx)
+print(cnt, maxx)
