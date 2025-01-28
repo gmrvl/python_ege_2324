@@ -1,5 +1,5 @@
 cnt = 0
-for i in range(1001,10000,1):
+for i in range(1001, 10000, 1):
     n = 0
     s = str(i)
     a1 = s[0]

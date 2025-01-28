@@ -1,4 +1,4 @@
-from turtle import*
+from turtle import *
 speed(1000)
 k = 20
 left(90)
