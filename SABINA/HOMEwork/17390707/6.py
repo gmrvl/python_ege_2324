@@ -1,6 +1,6 @@
 from turtle import *
 speed(100)
-k = 20
+k = 30
 for i in range(4):
     forward(k*14)
     right(90)
