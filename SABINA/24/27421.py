@@ -1,4 +1,4 @@
-f = open('24.txt').readline()
+f = open('24_demo.txt').readline()
 k = 1
 m = 0
 for i in range(1, len(f)):
