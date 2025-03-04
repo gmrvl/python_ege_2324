@@ -1,4 +1,4 @@
-for i in range(1000,10000):
+for i in range(1000, 10000):
     s = str(i)
     a1 = s[0]
     a2 = s[1]
