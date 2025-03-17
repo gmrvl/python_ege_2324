@@ -1,4 +1,4 @@
-k = []
+'''k = []
 for i in range(1000,10000):
     s = str(i)
     a1 = int(s[0])
@@ -14,4 +14,12 @@ for i in range(1000,10000):
 #    print(r)
 
     if r == '210':
-        print(i)
+        print(i)'''
+
+
+f = [123876]
+for i in range(len(f)):
+    if f[i] == '3':
+        f.split(f[i])
+print(f)
+

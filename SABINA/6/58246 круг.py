@@ -1,9 +1,9 @@
-import turtle #
+import turtle
 
 t = turtle.Turtle()
 t.reset()
-t.seth(90)
-t.width(2)
+t.seth(90) #ориентации черепашки на определённый угол
+t.width(2) #ширина
 t.speed(20)
 k = 10  # коэффициент для увеличения масштаба
 t.right(180)
