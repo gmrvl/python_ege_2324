@@ -1,22 +1,19 @@
 for i in range(49,1000):
-    a = '0' + '1' * 48 + i * '2'
-    summ = 0
-    b = 0
-    fl = True
-    while '00' not in a:
-        b = a.replace('02', '101', 1)
-        b = a.replace('11', '2', 1)
-        b = a.replace('012', '30', 1)
-        b = a.replace('010', '00', 1)
-    while b > 0:
-        summ = b % 10
-        b = b // 10
-        for k in range(2,(b**0.5) + 1):
-            if b <= 1:
-                fl = False
-            if b % k == 0:
-                fl = False
-            else:
-                fl = True
-    if fl:
+    b = '0' + i * '2' + '1' * 48 + '0'
+    while not ('00' in b):
+        b = b.replace('02', '101', 1)
+        b = b.replace('11', '2', 1)
+        b = b.replace('012', '30', 1)
+        b = b.replace('010', '00', 1)
+
+    summ = b.count('1') + b.count('2')*2 + b.count('3') * 3
+    dells = []
+    for k in range(2, int(summ**0.5) + 1):
+        if summ % k == 0:
+            dells.append(1)
+            break
+    print(summ, dells)
+    print(b)
+    if len(dells) == 0:
         print(i)
+        break
