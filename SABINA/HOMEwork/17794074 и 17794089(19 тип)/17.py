@@ -10,7 +10,7 @@ f = open('17.txt')
 fst = f.readline()
 for sec in f:
     fst, sec = int(fst), int(sec)
-    if len(str(fst)) == 4 and len(str(sec)) != 4:
+    if len(str(fst)) == 4 and len(str(sec)) != 4 or :
         if ((fst)**2 + (sec)**2) % minn == 0:
             cnt += 1
             maxx = max(maxx,((fst)**2 + (sec)**2))
