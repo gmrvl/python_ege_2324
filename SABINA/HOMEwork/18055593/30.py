@@ -1,4 +1,5 @@
 from functools import lru_cache
+import math
 
 @lru_cache()
 def f(n):
