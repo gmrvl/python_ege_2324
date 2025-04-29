@@ -1,4 +1,5 @@
 f = open('09.csv')
+cnt = 0
 for i in f:
     s = list(map(int,i.split(';')))
     for k in range(len(s)):
