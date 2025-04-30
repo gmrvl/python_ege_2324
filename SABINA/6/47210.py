@@ -1,4 +1,5 @@
 from turtle import *
+tracer(0) #если 0 мгновенно дает результат рисунка и точек
 k = 30
 left(90)
 speed(100)

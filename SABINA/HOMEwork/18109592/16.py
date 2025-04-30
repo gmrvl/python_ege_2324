@@ -8,8 +8,8 @@ def f(n):
     if n % 2 == 1:
         return f(n//10)
 c = 0
-for k in range(10**9, 2*(10**9)):
-    f(k)
-    if f(k) == 0:
+for n in range(10**9, 2*(10**9)):
+    f(n)
+    if f(n) == 0:
         c += 1
 print(c)
