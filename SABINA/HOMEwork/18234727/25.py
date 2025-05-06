@@ -1,10 +1,13 @@
 for n in range(2000000,3000001):
-    for delit in range(1,int(str(n**0,5))+1):
-        r = []
+    sqr = int(n**0.5)
+    r = []
+    for delit in range(1, sqr+1):
         if n % delit == 0:
-            if delit <= (n // delit):
+            if delit <= (n // delit) and (n // delit)-delit <= 115:
                 r.append((n // delit)-delit)
             else:
-                r.append(delit-(n // delit))
-        if len(r) >= 3 and max(r) <= 115:
+                if (n // delit)-delit <= 115:
+                    r.append(delit-(n // delit))
+        if len(r) >= 3:
             print(n)
+            break
