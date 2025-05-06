@@ -1,0 +1,4 @@
+def f(x,a):
+    return ((x&28 != 0) or (x&45 != 0)) <= ((x&17 == 0)<= (x&a != 0))
+
+print(min(a for a in range(0,200) if all(f(x,a) == 1 for x in range(1,2000))))
