@@ -5,7 +5,7 @@ for i in f:
     nc = []
     s = list(map(int,i.split(';')))
 
-    if len(set(s)) != len(s):
+    if len(set(s)) == len(s):
         for k in range(len(s)):
             if s[k] % 2 == 0:
                 c.append(s[k])
